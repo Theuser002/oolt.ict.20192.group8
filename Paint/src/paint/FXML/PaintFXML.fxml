@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panecolor" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #DBD5C7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paint.FXML.PaintController">
+   <children>
+      <AnchorPane fx:id="backgroundPane" layoutX="157.0" layoutY="13.0" prefHeight="674.0" prefWidth="1000.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="13.0">
+         <children>
+            <Canvas fx:id="overlay" height="674.0" width="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Canvas fx:id="canvas" height="674.0" width="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Circle fill="#76825e" layoutX="1105.0" layoutY="111.0" radius="73.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="38.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Circle>
+      <Text layoutX="1051.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S I M P L E" AnchorPane.rightAnchor="93.78125" AnchorPane.topAnchor="88.0" />
+      <Text layoutX="1086.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P A I N T" AnchorPane.rightAnchor="25.7060546875" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="hBox" layoutX="1033.0" layoutY="342.0" style="-fx-background-color: #234458;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Separator layoutX="76.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="460.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="0.0" />
+            <Region layoutX="-3.0" layoutY="354.0" prefHeight="87.0" prefWidth="159.0" style="-fx-background-color: #618186;" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Region>
+            <Region layoutX="3.0" layoutY="40.0" prefHeight="162.0" prefWidth="153.0" style="-fx-background-color: #618186;" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Region>
+            <Region layoutX="-3.0" layoutY="286.0" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #618186;" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Region>
+            <Region layoutX="-4.0" layoutY="230.0" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #618186;" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Region>
+            <ColorPicker fx:id="colorPicker" layoutX="13.0" layoutY="91.0" style="-fx-background-color: white;" />
+            <Spinner fx:id="sizeTool" layoutX="43.0" layoutY="162.0" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: white;" />
+            <Button fx:id="undo" layoutX="51.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" />
+            <Button fx:id="redo" layoutX="53.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" />
+            <ColorPicker fx:id="cpFill" layoutX="16.0" layoutY="387.0" style="-fx-background-color: white;" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C o l o r" textAlignment="CENTER" wrappingWidth="129.75000601261854" />
+            <Text fill="WHITE" layoutX="21.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S i z e" textAlignment="CENTER" wrappingWidth="114.326171875" />
+            <Text fill="WHITE" layoutX="18.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F i l l" textAlignment="CENTER" wrappingWidth="114.326171875" />
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar fx:id="menuBar" layoutY="-3.0" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #e1e4a8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem fx:id="newFile" mnemonicParsing="false" text="New File" />
+                        <MenuItem fx:id="saveFile" mnemonicParsing="false" text="Save File" />
+                        <MenuItem fx:id="openFile" mnemonicParsing="false" text="Open File" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem fx:id="menuUndo" mnemonicParsing="false" text="Undo" />
+                        <MenuItem fx:id="menuRedo" mnemonicParsing="false" text="Redo" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="menuAbout" mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </MenuBar>
+            <AnchorPane fx:id="tilePane" layoutX="7.0" layoutY="33.0" prefWidth="145.0" style="-fx-background-color: #3C4655;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="33.0">
+               <children>
+                  <AnchorPane layoutX="24.0" prefWidth="125.0" style="-fx-background-color: #C05D4F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Separator layoutX="34.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="0.0" />
+                        <Region layoutX="5.0" layoutY="41.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutX="5.0" layoutY="465.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="460.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutX="5.0" layoutY="374.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="320.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutX="-6.0" layoutY="98.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="110.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutY="309.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="390.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutX="-13.0" layoutY="224.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="250.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Region layoutX="-6.0" layoutY="148.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="180.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Button fx:id="pencil" layoutX="20.0" layoutY="48.0" mnemonicParsing="false" onAction="#penToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="brush" layoutX="20.0" layoutY="118.0" mnemonicParsing="false" onAction="#brushToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="line" layoutX="20.0" layoutY="188.0" mnemonicParsing="false" onAction="#lineToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="rectangle" layoutX="20.0" layoutY="258.0" mnemonicParsing="false" onAction="#recToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="circle" layoutX="20.0" layoutY="328.0" mnemonicParsing="false" onAction="#circleToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="ellipse" layoutX="20.0" layoutY="398.0" mnemonicParsing="false" onAction="#ellipseToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="roundRect" layoutX="20.0" layoutY="468.0" mnemonicParsing="false" onAction="#roundRectDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Region layoutX="-5.0" layoutY="516.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="530.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Button fx:id="triangle" layoutX="20.0" layoutY="538.0" mnemonicParsing="false" onAction="#triangleDraw" prefHeight="25.0" prefWidth="52.0" />
+                        <Region layoutX="4.0" layoutY="579.0" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #76825e;" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="600.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Region>
+                        <Button fx:id="eraser" layoutX="20.0" layoutY="608.0" mnemonicParsing="false" onAction="#eraserToolDraw" prefHeight="25.0" prefWidth="52.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="labelBtn" layoutX="1205.0" layoutY="49.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="125.0" prefWidth="130.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" text="Button" textFill="TRANSPARENT" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="49.0" />
+   </children>
+</AnchorPane>

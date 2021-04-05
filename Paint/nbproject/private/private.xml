@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/PaintMain.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/action/PaintAction.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/tools/EraserTool.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/action/Redo.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/file/FileAct.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/FXML/PaintController.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/action/Undo.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/file/PaintFile.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/tools/PencilTool.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/tools/PenBrush.java</file>
+            <file>file:/D:/paint/oolt.ict.20192.group8/Paint/src/paint/tools/ShapeDraw.java</file>
+        </group>
+    </open-files>
+</project-private>
